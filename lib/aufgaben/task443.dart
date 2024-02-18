@@ -1,10 +1,4 @@
-// ignore_for_file: unnecessary_import
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -79,10 +73,11 @@ class MyApp extends StatelessWidget {
             color: Colors.amber,
             height: 60,
             //!
-            //! Auch hier die Frage, warum ich hier ein Directionality-Widget verwenden MUSS?
+            //! Auch hier die Frage, warum ich hier ein Directionality-Widget verwenden MUSS, um im Smartphone-Display keinen Fehler bekomme??
             child: const Directionality(
                 textDirection: TextDirection.ltr,
-                child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(
                       Icons.home,
