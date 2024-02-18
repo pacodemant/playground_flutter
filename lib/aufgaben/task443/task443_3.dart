@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +43,7 @@ class MyApp extends StatelessWidget {
                   ),
                 )),
           ),
-          //! ------------------------------------ mitterer Container, hier ist Hauptinhalt (der body, wenn es ein Scaffold wäre)
+          //! ------------------------------------ mitterer Container, Hauptinhalt (der body, wenn es ein Scaffold wäre)
           Container(
             width: double.infinity,
             color: Colors.deepPurple,
@@ -51,45 +53,43 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Directionality(
-                    textDirection: TextDirection.ltr,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                              color: Colors.blue,borderRadius: BorderRadius.circular(50.0),
-                              border: Border.all(
-                                width: 3.0,
-                                color: Colors.white,
-                              )),
-                          alignment: Alignment.center,
-                          width: 100,
-                          height: 100,
-                          child: const Text('Box 1'),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                          width: 120,
-                          height: 80,
-                          color: Colors.green,
-                          child: const Text('Box 2'),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                          width: 80,
-                          height: 120,
-                          color: Colors.red,
-                          child: const Text('Box 3'),
-                        ),
-                      ],
-                    ))
+                Column(
+                  children: [
+                    Container(
+                      //! Box 1
+                      decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(50.0),
+                          border: Border.all(
+                            width: 3.0,
+                            color: Colors.white,
+                          )),
+                      alignment: Alignment.center,
+                      width: 100,
+                      height: 100,
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      //! Box 2
+                      alignment: Alignment.center,
+                      width: 120,
+                      height: 80,
+                      color: Colors.green,
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Container(
+                      //! Box 3
+                      alignment: Alignment.center,
+                      width: 80,
+                      height: 120,
+                      color: Colors.red,
+                    ),
+                  ],
+                )
               ],
             ),
           ),
