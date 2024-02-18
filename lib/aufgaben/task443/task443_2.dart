@@ -10,12 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.deepPurple,
+      color: Colors.black,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          //! ------------------------------------ Row ganz oben
+          //! ------------------------------------ Row ganz oben, quasi im "SafeSpace"
           Container(
             color: Colors.cyan,
             height: 57,
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
                 textDirection:
                     TextDirection.ltr, // Hier können Sie die Leserichtung Ihrer App angeben
                 child: Text(
-                  'Column and Row Example',
+                  'SizedBox Exercise',
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.black,
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
             width: double.infinity,
             color: Colors.deepPurple,
             height: 685,
-            child: const Column(
+            child: Column(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -56,12 +56,29 @@ class MyApp extends StatelessWidget {
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
-                        Text(
-                          'AB',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                        Container(
+                          alignment: Alignment.center,
+                          width: 100,
+                          height: 100,
+                          color: Colors.blue,
+                          child: const Text('Box 1'),
                         ),
-                        Text('CD'),
-                        Text('E'),
+                        const SizedBox(height: 20,),
+                        Container(
+                          alignment: Alignment.center,
+                          width: 120,
+                          height: 80,
+                          color: Colors.green,
+                          child: const Text('Box 2'),
+                        ),
+                        const SizedBox(height: 20,),
+                        Container(
+                          alignment: Alignment.center,
+                          width: 80,
+                          height: 120,
+                          color: Colors.red,
+                          child: const Text('Box 3'),
+                        ),
                       ],
                     ))
               ],
@@ -81,15 +98,15 @@ class MyApp extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.home,
-                      color: Colors.black,
+                      color: Colors.blue,
                     ),
                     Icon(
                       Icons.circle,
-                      color: Colors.black,
+                      color: Colors.green,
                     ),
                     Icon(
                       Icons.square,
-                      color: Colors.black,
+                      color: Colors.red,
                     ),
                   ],
                 )),
