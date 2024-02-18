@@ -2,7 +2,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:playground_flutter/playground/yt_button_navi/quiz_page.dart';
+import 'package:playground_flutter/playground/yt_quizz_app/quiz_page.dart';
 
 void main() {
   runApp(StartApp());
