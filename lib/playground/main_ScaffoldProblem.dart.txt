@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const Aufgabe4431());
+}
+
+class Aufgabe4431 extends StatelessWidget {
+  const Aufgabe4431({super.key});
+
+@override
+  Widget build(BuildContext context) {
+  return Scaffold(
+        appBar: AppBar(title: const Text('Hello World App')),
+        body: const Center(child: Text('Hello, World!', style: TextStyle(fontSize: 24))),
+      );
+  }
+}
+
