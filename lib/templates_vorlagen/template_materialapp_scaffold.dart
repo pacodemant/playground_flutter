@@ -1,17 +1,17 @@
-//? Mit diesem Template kannst du problemlos neue Seiten erstellen, 
-//? indem du einfach neue Klassen erstellst, 
-//? die StatelessWidget oder StatefulWidget erweitern, 
+//? Mit diesem Template kannst du problemlos neue Seiten erstellen,
+//? indem du einfach neue Klassen erstellst,
+//? die StatelessWidget oder StatefulWidget erweitern,
 //? und sie dann als neue home-Route in MaterialApp einfügst.
 
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyGroceryStore());
 }
 
-class MyApp extends StatelessWidget {
+class MyGroceryStore extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,14 +28,17 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('My App'),
-      ),
-      body: Center(
-        child: Text(
-          'Welcome to your Flutter app!',
-          style: TextStyle(fontSize: 24),
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Center(
+              child: Placeholder(
+            color: Colors.amber,
+            fallbackHeight: 100.0, //!fallbackHeigt ist die Höhe, die verwendet werden soll, wenn der Platzhalter sich in einer Situation mit einer unbegrenzten Höhe befindet
+            fallbackWidth: 100.0,
+          ))
+        ],
       ),
     );
   }
