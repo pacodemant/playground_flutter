@@ -2,6 +2,9 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import "package:playground_flutter/aufgaben/task452_grocery_shopping/models/das_gruene_dingens_da.dart";
+
+
 
 class TitlePictureStack extends StatelessWidget {
   const TitlePictureStack({
@@ -17,52 +20,7 @@ class TitlePictureStack extends StatelessWidget {
         Positioned(
           bottom: 30.0,
           left: 30.0,
-          child: Row(
-            // die Objekte links unten im Image
-            children: [
-              Container(
-                // blauer Strich und …
-                decoration: BoxDecoration(
-                    color: Colors.green.withOpacity(0.8),
-                    borderRadius: BorderRadius.all(Radius.circular(4.0))),
-                height: 8,
-                width: 40,
-              ),
-              SizedBox(
-                width: 4.0,
-              ),
-              Container(
-                // ...  weiße kleine Kreise
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(4.0))),
-                height: 8,
-                width: 8,
-              ),
-              SizedBox(
-                width: 4.0,
-              ),
-              Container(
-                // ...  weiße kleine Kreise
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(4.0))),
-                height: 8,
-                width: 8,
-              ),
-              SizedBox(
-                width: 4.0,
-              ),
-              Container(
-                // ...  weiße kleine Kreise
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(4.0))),
-                height: 8,
-                width: 8,
-              ),
-            ],
-          ),
+          child: DasGrueneDingensDa()
         ),
         Positioned(
             bottom: 70.0,
