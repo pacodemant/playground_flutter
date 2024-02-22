@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 class DasGrueneDingensDa extends StatelessWidget {
   const DasGrueneDingensDa({super.key});
 
+/// Die Annotation „@override“ in Dart wird verwendet, um anzugeben, dass eine Methode a überschreiben soll
+/// Methode in einer Superklasse. Diese Annotation trägt dazu bei, sicherzustellen, dass die Methode tatsächlich eine Methode überschreibt
+/// aus der Superklasse, und es verbessert auch die Lesbarkeit des Codes, indem es die Absicht explizit angibt
+/// überschreiben. Wenn die Methode keine Superklassenmethode überschreibt, generiert der Dart-Compiler eine
+/// Fehler.
   @override
   Widget build(BuildContext context) {
     return Row(

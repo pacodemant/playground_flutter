@@ -4,8 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import "package:playground_flutter/aufgaben/task452_grocery_shopping/models/das_gruene_dingens_da.dart";
 
-
-
 class TitlePictureStack extends StatelessWidget {
   const TitlePictureStack({
     super.key,
@@ -17,11 +15,7 @@ class TitlePictureStack extends StatelessWidget {
       alignment: Alignment.bottomLeft,
       children: [
         Image.asset('lib/aufgaben/task452_grocery_shopping/assets/background.png'),
-        Positioned(
-          bottom: 30.0,
-          left: 30.0,
-          child: DasGrueneDingensDa()
-        ),
+        Positioned(bottom: 30.0, left: 30.0, child: DasGrueneDingensDa()),
         Positioned(
             bottom: 70.0,
             left: 50.0,

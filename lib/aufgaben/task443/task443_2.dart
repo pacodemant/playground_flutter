@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
           //! ------------------------------------ Row mit Titelzeile
           Container(
             color: Colors.red,
-            //!
-            //! Warum nimmt der Container erst dann die gesamte Breite der Column darüber, wenn
-            //! das folgende Attribut "alignment" gesetzt wurde?
-            //! wird es auskommentiert, ist der Container nur exakt so breit, wie der Text
+            //todo
+            //todo Warum nimmt der Container erst dann die gesamte Breite der Column darüber, wenn
+            //todo  das folgende Attribut "alignment" gesetzt wurde?
+            //todo wird es auskommentiert, ist der Container nur exakt so breit, wie der Text
             alignment: Alignment.centerLeft,
             padding: const EdgeInsets.all(8), height: 50,
             child: const Directionality(
