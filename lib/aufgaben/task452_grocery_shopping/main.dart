@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:playground_flutter/task452_grocery_shopping/models/bottom_bar.dart';
-import 'package:playground_flutter/task452_grocery_shopping/models/product_tile2.dart';
-import 'package:playground_flutter/task452_grocery_shopping/models/product_tile2_avocado.dart';
-import 'package:playground_flutter/task452_grocery_shopping/models/title_picture_stack.dart';
-import 'package:playground_flutter/task452_grocery_shopping/models/searching_textfield.dart';
+import 'package:playground_flutter/aufgaben/task452_grocery_shopping/models/bottom_bar.dart';
+import 'package:playground_flutter/aufgaben/task452_grocery_shopping/models/product_tile2.dart';
+import 'package:playground_flutter/aufgaben/task452_grocery_shopping/models/product_tile2_avocado.dart';
+import 'package:playground_flutter/aufgaben/task452_grocery_shopping/models/title_picture_stack.dart';
+import 'package:playground_flutter/aufgaben/task452_grocery_shopping/models/searching_textfield.dart';
 
 void main() {
   runApp(const MaterialApp(

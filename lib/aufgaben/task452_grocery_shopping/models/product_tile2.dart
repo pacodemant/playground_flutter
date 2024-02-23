@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
-import 'package:playground_flutter/task452_grocery_shopping/models/icon_favorite.dart';
+import 'package:playground_flutter/aufgaben/task452_grocery_shopping/models/icon_favorite.dart';
 
 class ProductTile2 extends StatelessWidget {
   const ProductTile2({

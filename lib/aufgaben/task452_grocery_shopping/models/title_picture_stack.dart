@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import "package:playground_flutter/task452_grocery_shopping/models/das_gruene_dingens_da.dart";
+import "package:playground_flutter/aufgaben/task452_grocery_shopping/models/das_gruene_dingens_da.dart";
 
 class TitlePictureStack extends StatelessWidget {
   const TitlePictureStack({
