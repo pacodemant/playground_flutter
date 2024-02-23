@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
+import 'package:playground_flutter/task452_grocery_shopping/models/icon_favorite.dart';
 
 class ProductTile2 extends StatelessWidget {
   const ProductTile2({
@@ -12,13 +13,13 @@ class ProductTile2 extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          // ============================================================ Kachel 1
+          // SECTION Kachel 1
           width: 174,
           height: 234,
           color: Colors.white,
         ),
         Positioned(
-          // ============================================================ Kreis im Hintergrund
+          // SECTION Kreis im Hintergrund
           top: 20.0,
           left: 43.0,
           child: CircleAvatar(
@@ -27,7 +28,7 @@ class ProductTile2 extends StatelessWidget {
           ),
         ),
         Positioned(
-          // ============================================================ Produkt
+          // SECTION Produkt
           top: 44.0,
           left: 40.0,
           child: Image.asset(
@@ -36,7 +37,7 @@ class ProductTile2 extends StatelessWidget {
           ),
         ),
         Positioned(
-          // ============================================================ Produktinfos
+          // SECTION Produktinfos
           bottom: 40.0,
           left: 0.0,
           right: 0.0, // Fügt die gesamte Breite des obersten Containers hinzu
@@ -46,7 +47,7 @@ class ProductTile2 extends StatelessWidget {
             children: const [
               Text(
                 style: TextStyle(
-                  // ============================================================ txt Preis
+                  // SECTION txt Preis
                   color: Color.fromRGBO(108, 197, 29, 1),
                   fontSize: 14.0,
                   fontWeight: FontWeight.normal,
@@ -56,7 +57,7 @@ class ProductTile2 extends StatelessWidget {
               ),
               Text(
                 style: TextStyle(
-                  // ============================================================ txt Produkt
+                  // SECTION txt Produkt
                   fontSize: 17.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -65,7 +66,7 @@ class ProductTile2 extends StatelessWidget {
               ),
               Text(
                 style: TextStyle(
-                  // ============================================================txt Menge
+                  // SECTIONtxt Menge
                   color: Color.fromRGBO(134, 136, 137, 1),
                   fontSize: 14.0,
                   fontWeight: FontWeight.normal,
@@ -74,7 +75,7 @@ class ProductTile2 extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               Divider(
-                // ============================================================Divider
+                // SECTIONDivider
                 endIndent: 0,
               ),
             ],
@@ -88,7 +89,7 @@ class ProductTile2 extends StatelessWidget {
             width: 5.0,
             height: 45.0,
             child: ListTile(
-              // ============================================================ Action Add to Cart
+              // SECTION Action Add to Cart
               leading: Icon(
                 Icons.shopping_bag_outlined,
                 color: Colors.lightGreen,
@@ -103,11 +104,8 @@ class ProductTile2 extends StatelessWidget {
         Positioned(
           top: 7.0,
           right: 7.0,
-          child: Icon(
-            // Herz
-            Icons.favorite_border,
-            color: Colors.grey,
-          ),
+          //SECTION - favorite Icon
+          child: iconFavorite(),
         ),
         Positioned(
           top: 0.0,
@@ -122,6 +120,8 @@ class ProductTile2 extends StatelessWidget {
           ),
         ),
       ],
-    );
+    ); 
   }
+
+
 }

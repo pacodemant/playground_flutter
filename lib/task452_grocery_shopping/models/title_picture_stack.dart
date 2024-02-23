@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import "package:playground_flutter/aufgaben/task452_grocery_shopping/models/das_gruene_dingens_da.dart";
+import "package:playground_flutter/task452_grocery_shopping/models/das_gruene_dingens_da.dart";
 
 class TitlePictureStack extends StatelessWidget {
   const TitlePictureStack({
@@ -14,7 +14,7 @@ class TitlePictureStack extends StatelessWidget {
     return Stack(
       alignment: Alignment.bottomLeft,
       children: [
-        Image.asset('lib/aufgaben/task452_grocery_shopping/assets/background.png'),
+        Image.asset('lib/aufgaben/task452_grocery_shopping/assets/title_pic.png'),
         Positioned(bottom: 30.0, left: 30.0, child: DasGrueneDingensDa()),
         Positioned(
             bottom: 70.0,
